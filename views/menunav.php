@@ -119,6 +119,17 @@
       color: black;
       text-decoration: none;
     }
+    .home li{
+        display: inline-block;
+        list-style: none;
+        margin-top: auto;
+    }
+    .home li a{
+        display: inline-block;
+        color: black;
+        padding: 20px;
+        text-decoration: none;
+    }
   </style>
     <h1>
       <?php

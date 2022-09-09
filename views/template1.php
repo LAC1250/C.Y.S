@@ -153,8 +153,18 @@
             <a class='nav-item active' aria-current='page' href='$caminho/CYS/tempo/{$tempo['id']}'>{$tempo['descricao']}</a>
           </li>
           ";
-        }
+        }       
          ?>
+         <li class="home">
+             <a href='<?php echo $caminho?>/CYS/index'>
+               Home
+             </a>
+           </li>
+           <li class="tradutor">
+              <a href="https://context.reverso.net/traducao/" target="_blank">
+                Reverso Context - Tradutor
+              </a>
+          </li>
       </ul>
     </div>
     <div class="container-fluid">

@@ -14,13 +14,13 @@
 
      <h2>Questões</h2>
      <form action="<?php echo APP;?>questionario/salvar" method="post">
-        <div class="mb-3">
+     <div class="mb-3">
           <label for="id" class="form-label">ID</label>
-          <input readonly type="number" class="form-control" id="id" name="id" value='<?php echo "{$questionario['id']}"; ?>'>
-         </div>
+          <input readonly type="text" class="form-control" id="id" name="id" value='<?php echo "{$questionario['id']}"; ?>'>
+        </div>
          <div class="mb-3">
            <label for="id_musica" class="form-label">ID musica</label>
-           <input type="number" class="form-control" id="id_musica" name="id_musica" value='<?php echo "{$questionario['id_musica']}"; ?>'>
+           <input readonly type ="text" class="form-control" id="id_musica" name="id_musica" value='<?php echo "{$questionario['id_musica']}"; ?>'>
           </div>
          <div class="mb-3">
            <label for="pergunta" class="form-label">Pergunta</label>

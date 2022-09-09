@@ -47,7 +47,9 @@ function geraQuestao() {
   btn_responder.addEventListener("click", function() {
     var opcao = getOpcaoSelecionada();
     var questaoAtual = questoes[indice];
-    if (opcao.toUpperCase() == questaoAtual['opcaoCerta'].toUpperCase()) {
+    //opcao.toUpperCase() == questaoAtual['opcaocerta'].toUpperCase()
+    if (opcao.toUpperCase() == questaoAtual['opcaocerta'].toUpperCase()) {
+
       acertos++;
     } else {
       erros++;
@@ -64,7 +66,8 @@ function geraResposta(questao, resposta) {
   classeB = ""
   classeC = ""
   mensagem = "";
-  if (resposta == questao['opcaoCerta']) {
+  //resposta.toUpperCase() == questao['opcaocerta'].toUpperCase()
+  if (resposta.toUpperCase() == questao['opcaocerta'].toUpperCase()) {
       classe = 'd-block alert alert-success';
       mensagem = "Parabéns, você escolheu a resposta certa !!!";
       if (resposta == 'a') {

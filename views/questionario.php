@@ -133,12 +133,27 @@
         position: fixed;
         left: 350px;
     }
-    .voltar li a{
-      text-decoration: none;
-      position: relative;
-      list-style: none;
-      left: 12px;
-      color: black;
+    .voltar a{
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        margin: auto;
+        bottom: 20px;
+        left: 40px;      
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .site a{
+        display: inline-block;
+        list-style: none;
+        position: relative;
+        margin: auto;
+        bottom: 82px;
+        left: 100px;      
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
     }
     .progress{
       background-color: white;
@@ -157,7 +172,24 @@
       width: 420px;
     }
   </style>
-
+  <h1>
+  <?php
+    $caminho = APP;
+    echo "
+      <p class='voltar'>
+        <a href='$caminho/CYS/tempo/{$musica['id_tempo']}'>Voltar</a>
+      </p>
+    ";
+     ?>
+     <p class="site">
+        <a href="https://www.englishexperts.com.br/forum/search?q=tempos+verbais" target="_blank">Veja mais sobre os tempos verbais - English Experts</a>
+      </p>
+  </h1>
+  <h1>
+      <?php
+        echo "<p class='d-flex justify-content-end' id='tempo_verbal'>{$tempo['descricao']}</p>";
+       ?>
+    </h1>
   <div id="containerPlayer">
     <div id='player'>
         <div class='music-container' id='music-container'>

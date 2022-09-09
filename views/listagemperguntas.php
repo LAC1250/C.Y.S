@@ -2,7 +2,8 @@
   $caminho = APP;
 ?>
           <link rel="stylesheet" href='<?php echo $caminho; ?>/Style/style.css'>
-              <h1>Perguntas</h1>
+              <h1>Perguntas</h1>          
+              <a type="button" class="btn btn-primary" href="<?php echo APP;?>questionario/novo">Nova Questão</a>
                   <table class="table table-striped">
                     <thead>
                       <tr>
@@ -14,6 +15,7 @@
                         <th scope="col">Resposta</th>
                       </tr>
                     </thead>
+
                       <tbody>
                         <?php
                         foreach ($questionarios as $questionario) {

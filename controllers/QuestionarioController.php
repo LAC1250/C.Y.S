@@ -7,7 +7,7 @@
          $dados['questionarios'] = $questionarios;
          $this->view('listagemperguntas', $dados);
      }
-     public function novo(){
+     public function novo($id_musica){
         $questionario = array();
         $questionario['id'] = 0;
         $questionario['pergunta'] = "";
@@ -16,7 +16,7 @@
         $questionario['opcaoc'] = "";
         $questionario['resposta'] = "";
         //é um input readonly
-        $questionario['id_musica'] = "";
+        $questionario['id_musica'] = $id_musica;
         //$questionario['titulo_musica'] = "";
         //$model = new Musica();
         //$musica = $model->read();
