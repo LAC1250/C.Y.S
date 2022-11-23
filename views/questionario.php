@@ -182,7 +182,7 @@
     ";
      ?>
      <p class="site">
-        <a href="https://www.englishexperts.com.br/forum/search?q=tempos+verbais" target="_blank">Veja mais sobre os tempos verbais - English Experts</a>
+        <a href="https://www.englishexperts.com.br/tempos-verbais-em-ingles/" target="_blank">Veja mais sobre os tempos verbais - English Experts</a>
       </p>
   </h1>
   <h1>

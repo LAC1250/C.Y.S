@@ -48,7 +48,7 @@ function geraQuestao() {
     var opcao = getOpcaoSelecionada();
     var questaoAtual = questoes[indice];
     //opcao.toUpperCase() == questaoAtual['opcaocerta'].toUpperCase()
-    if (opcao.toUpperCase() == questaoAtual['opcaocerta'].toUpperCase()) {
+    if (opcao.toUpperCase().trim() == questaoAtual['opcaocerta'].toUpperCase().trim()) {
 
       acertos++;
     } else {
@@ -67,7 +67,7 @@ function geraResposta(questao, resposta) {
   classeC = ""
   mensagem = "";
   //resposta.toUpperCase() == questao['opcaocerta'].toUpperCase()
-  if (resposta.toUpperCase() == questao['opcaocerta'].toUpperCase()) {
+  if (resposta.toUpperCase().trim() == questao['opcaocerta'].toUpperCase().trim()) {
       classe = 'd-block alert alert-success';
       mensagem = "Parabéns, você escolheu a resposta certa !!!";
       if (resposta == 'a') {
